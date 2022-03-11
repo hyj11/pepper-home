@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sim.landlord.controller.HouseController">
+    <children>
+        <HBox id="box" fx:id="box" layoutX="15.0" layoutY="108.0" prefHeight="372.0" prefWidth="676.0">
+            <children>
+                <Label id="username" fx:id="username" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="300.0" textAlignment="LEFT">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="50.0" right="10.0" top="100.0" />
+                    </HBox.margin>
+                </Label>
+                <Button id="region" fx:id="region" contentDisplay="CENTER" font="$x1" minHeight="28.0" mnemonicParsing="false" onAction="#outHouse" opacity="0.79" prefHeight="35.0" prefWidth="126.0" text="退出房间" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" fx:id="x1" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="-240.0" top="200.0" />
+                    </HBox.margin>
+                </Button>
+                <Label id="wait" fx:id="wait" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="90.0" text="请等待" textAlignment="LEFT" textFill="#f24b14"  visible="false">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="50.0" right="10.0" top="100.0" />
+                    </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="19.0" />
+               </font>
+                </Label>
+                <Button id="login" fx:id="login" font="$x1" minHeight="28.0" mnemonicParsing="false" onAction="#start" opacity="0.79" prefHeight="35.0" prefWidth="133.0" text="开始" visible="false">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="200.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
